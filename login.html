@@ -23,9 +23,9 @@
       display: flex;
       -ms-flex-align: center;
       align-items: center;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      background-color: #f5f5f5;
+      padding-bottom: 100px;
+      background-color: #f7f8f8;
+      color: #347380;
     }
 
     .signin {
@@ -34,16 +34,47 @@
       padding: 15px;
       margin: auto;
     }
+
+    img{
+      width: 55%;
+      margin-bottom: -15px;
+    }
+
+    #btn-ingreso{
+      font-weight: bold;
+      margin-top: 10px;
+      background-color: #2c9eb5;
+      color: white;
+    }
+    input{
+      background-color: #dadae0;
+      border: 0px;
+      margin: 4px;
+      padding: 4px 40px;
+    }
+   
+    
+
   </style>
 </head>
 
 <body class="text-center">
   <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 1 (Fecha de entrega: 08/08/2021).</p>
+      <img src="img/login.png">
       <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
+      <h1>Iniciar sesión</h1>
+      <form id="userForm" class="signin" method="POST">
+        <input type="text" id="username" placeholder="Nombre de usuario" required>
+        <br>
+        <input type="email" id="mail" placeholder="Email" required>
+        <br>
+        <input type="password" id="contraseña" placeholder="Contraseña" minlength="6" required>
+        <br>
+        <input type="submit" id="btn-ingreso" value="INGRESAR">
+      </form>
+      <hr>
+    
+      
     </div>
   </div>
 
@@ -51,3 +82,4 @@
   <script src="js/login.js"></script>
 </body>
 </html>
+
