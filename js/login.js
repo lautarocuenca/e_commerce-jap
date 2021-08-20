@@ -7,7 +7,7 @@ const userForm = document.getElementById("userForm");
 document.addEventListener("DOMContentLoaded", function(e){
     userForm.addEventListener("submit" , (e) => {
         e.preventDefault();
-        sessionStorage.setItem ("log", true);
+        localStorage.setItem ("log", true);
         location.replace("index.html");
     });
 
